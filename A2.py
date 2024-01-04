@@ -2,15 +2,15 @@
 
 class Drinks:
     def __init__(self):
-        self.price = 0
-    def SetPrice(self, price):
+        self.price = 0 #初始化 價格
+    def SetPrice(self, price):#設定價格
         self.price = price
 
 class ColdDrinks(Drinks):#繼承Drinks
 
     def __init__(self,name,price,ice,sugar):#初始化 名稱、價格、冰量、甜度
         self.name = name
-        self.price = price
+        self.price = price #繼承Drinks
         self.ice = ice
         self.sugar = sugar
 
